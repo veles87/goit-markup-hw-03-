@@ -17,7 +17,8 @@ html {
   box-sizing: inherit;
 }
 :root {
-  --background-color: #fff;
+  --team-color: #f5f4fa;
+  --background-color: #ffffff;
   --primary-text-color: #757575;
   --hover-color: #2196f3;
   --title-color: #212121;
@@ -97,6 +98,9 @@ p {
 .logotip:hover {
   color: var(--hover-color);
 }
+.logos:hover {
+  color: var(--hover-color);
+}
 .list {
   list-style-type: none;
 }
@@ -130,10 +134,8 @@ header .saite-contacts {
   padding-left: 50px;
 }
 .contacts {
-   {
-    font-weight: var(--secondary--font-weight);
-    line-height: var(--primary-line-height);
-  }
+  font-weight: var(--secondary--font-weight);
+  line-height: var(--primary-line-height);
 }
 /*.current {
   
@@ -267,6 +269,13 @@ header .saite-contacts {
   padding-left: 30px;
 }
 /*our-team*/
+
+.conteiners {
+  background: #f5f4fa;
+}
+.we {
+  color: var(--team-color);
+}
 .we-1 {
   font-family: Roboto;
   font-style: normal;
@@ -275,8 +284,16 @@ header .saite-contacts {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-bottom: 50px;
 
   color: var(--title-color);
+}
+.our-team {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  display: flex;
 }
 h3 {
   font-family: Roboto;
@@ -286,85 +303,48 @@ h3 {
   line-height: 1.18;
   color: var(--title-color);
 }
-/*footer*/
-.footer-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  color: var(--white-color-text);
+.team-card {
+  background-color: var(--white-color-text);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
-.footer-logo1 {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--hover-color);
+.team-card-title {
+  font-weight: var(--secondary--font-weight);
+  padding-bottom: 10px;
+  padding-top: 30px;
 }
-.footer-logo:hover,
-.footer-logo1:hover,
-.footer-mail:hover,
-.footer-phone:hover {
-  color: var(--hover-color);
+.ihor1 {
+  color: var(--primary-text-color);
+  padding-bottom: 30px;
 }
-.footer-address {
-  width: 231px;
-  height: 81px;
-  left: 215px;
-  top: 2208px;
-}
-.addres {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: var(--white-color-text);
-}
-.footer-mail {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-phone {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer-bg {
-  width: 1600px;
+footer {
+  background-color: var(--bg-color);
   height: 252px;
-  left: 0px;
-  top: 2097px;
-
-  background: var(--bg-color);
+  padding-top: 60px;
 }
 
+footer .logo {
+  color: var(--white-color-text);
+}
+.contact-list {
+  padding-left: 215px;
+  margin-top: 20px;
+}
+footer .contact-links {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--primary-text-color);
+}
+address {
+  font-style: normal;
+}
+.location {
+  color: var(--white-color-text);
+}
+.contact-links:hover,
+.contact-links:focus {
+  color: var(--hover-color);
+}
 /*portfolio html*/
 .portfolio-logo {
   font-family: Raleway;
@@ -627,7 +607,6 @@ h3 {
   width: 1600px;
   height: 252px;
   left: 0px;
-  top: 1628px;
 
   background: var(--bg-color);
 }
@@ -637,7 +616,7 @@ h3 {
 .portfolio-phone:hover {
   color: var(--hover-color);
 }
-.logo1 {
+.logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -647,6 +626,24 @@ h3 {
 
   letter-spacing: 0.03em;
 
+  color: var(--hover-color);
+}
+.logo-color {
+  color: var(--hover-color);
+}
+.logos {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  padding-left: 215px;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color-text);
+}
+.logos-color {
   color: var(--hover-color);
 }
 .web {
