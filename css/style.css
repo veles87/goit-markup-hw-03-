@@ -30,6 +30,7 @@ html {
   --primary-line-height: 1.14;
   --primary--font-weight: 700;
   --secondary--font-weight: 500;
+  --grid-item: 9;
 }
 
 .body {
@@ -479,9 +480,9 @@ address {
   color: var(--white-color-text);
 }
 
-.portfolio {
+/*.portfolio {
   background: #e5e5e5;
-}
+}*/
 .galery {
   display: flex;
   list-style: none;
@@ -492,11 +493,14 @@ address {
   margin-top: -30px;
 }
 .grid-item {
+  flex-basis: calc(100% / var(--grid-item) - 30px);
+
   margin-left: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
 }
-
+.clock {
+  padding-left: 94px;
+}
 .project-titles {
   font-family: Roboto;
   font-style: normal;
@@ -506,7 +510,9 @@ address {
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
-
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 4px;
   color: var(--title-color);
 }
 .project-title {
@@ -518,9 +524,10 @@ address {
   /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
-.galery {
-}
+
 .project-1 {
   width: 370px;
   height: 404px;
