@@ -5,7 +5,12 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 html {
   box-sizing: border-box;
@@ -71,6 +76,10 @@ p {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.conteiner-we {
+  width: 1200px;
+  margin: 70px;
 }
 .link {
   list-style: none;
@@ -276,6 +285,7 @@ header .saite-contacts {
   padding-right: 50px;
   background: #f5f4fa;
 }
+
 .we {
   padding: 0px;
   margin: 0;
@@ -289,10 +299,13 @@ header .saite-contacts {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 50px;
 
   color: var(--title-color);
+}
+.wee {
+  height: 648px;
+  background-color: var(--team-color);
 }
 .our-team {
   font-size: 16px;
@@ -300,7 +313,7 @@ header .saite-contacts {
   text-align: center;
   display: flex;
   padding: 50px;
-  margin-left: 90px;
+  padding-left: 90px;
 }
 h3 {
   font-family: Roboto;
@@ -318,6 +331,7 @@ h3 {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
 .team-card-title {
   font-weight: var(--secondary--font-weight);
   padding-bottom: 10px;
