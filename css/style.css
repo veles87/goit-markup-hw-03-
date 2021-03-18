@@ -271,6 +271,8 @@ header .saite-contacts {
 /*our-team*/
 
 .conteiners {
+  display: inline-block;
+  padding-right: 50px;
   background: #f5f4fa;
 }
 .we {
