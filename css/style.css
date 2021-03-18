@@ -72,7 +72,7 @@ p {
   padding: 0 15px;
 }
 .link {
-  text-decoration: none;
+  list-style: none;
   color: inherit;
 }
 .logo {
@@ -340,6 +340,15 @@ footer .logo {
   margin-top: 20px;
 }
 footer .contact-links {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
   display: block;
   margin-bottom: 9px;
   color: var(--primary-text-color);
@@ -355,68 +364,22 @@ address {
   color: var(--hover-color);
 }
 /*portfolio html*/
-.portfolio-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
 
-  letter-spacing: 0.03em;
-  color: var(--hover-color);
-}
-.portfolio-logotipe {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  color: var(--text-black-color);
-}
-.portfolio-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--title-color);
-}
-.portfolio-logotipe:hover {
-  color: var(--hover-color);
-}
-.portfolio-link:hover,
-.portfolio-link:focus {
-  color: var(--hover-color);
-}
-.portfolio-contacts {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
-}
 .visually {
   display: none;
 }
 /*навигация*/
-/*.filters {
-  position: absolute;
-  width: 611px;
-  height: 54px;
-  left: 495px;
-  top: 174px;
+.conteiner-portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
-*/
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+/*
 .vse {
   font-family: Roboto;
   font-style: normal;
@@ -456,7 +419,7 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
+  
 
   color: var(--title-color);
   border-radius: 4px;
@@ -468,12 +431,14 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  /* identical to box height, or 162% */
+ 
 
   color: var(--title-color);
   border-radius: 4px;
   cursor: pointer;
 }
+*/
+/*
 .vse:hover,
 .vse:focus,
 .sites:hover,
@@ -485,19 +450,53 @@ address {
 .marketings:hover,
 .marketings:focus {
   background: var(--hover-color);
-}
+}*/
 .all:hover {
   color: var(--white-color-text);
 }
 /*проекты*/
-/*
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  background-color: var(--team-color);
+  border-radius: 4px;
+  border: none;
+  margin-right: 8px;
+  min-width: 73px;
+  padding: 6px 22px;
+  cursor: pointer;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--hover-color);
+  color: var(--white-color-text);
+}
+
 .portfolio {
-  width: 1170px;
-  height: 1360px;
-  left: 215px;
-  top: 174px;
   background: #e5e5e5;
-}*/
+}
+.galery {
+  display: flex;
+  list-style: none;
+}
+.grid {
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.grid-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
 .project-titles {
   font-family: Roboto;
   font-style: normal;
@@ -519,6 +518,8 @@ address {
   /* identical to box height, or 187% */
 
   letter-spacing: 0.03em;
+}
+.galery {
 }
 .project-1 {
   width: 370px;
@@ -631,7 +632,6 @@ address {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
 
@@ -646,7 +646,7 @@ address {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
+
   padding-left: 215px;
   letter-spacing: 0.03em;
 
@@ -661,7 +661,6 @@ address {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
 
   letter-spacing: 0.03em;
 
@@ -673,7 +672,6 @@ address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 
   letter-spacing: 0.03em;
 
@@ -685,7 +683,6 @@ address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 
   letter-spacing: 0.03em;
 
@@ -697,7 +694,6 @@ address {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
 
   letter-spacing: 0.03em;
 
