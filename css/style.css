@@ -598,14 +598,13 @@ footer {
 .card-text {
   margin-top: 10px;
 }
-/*
+
 .project-titles {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
- 
 
   letter-spacing: 0.06em;
   padding-left: 24px;
@@ -619,7 +618,6 @@ footer {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
-  
 
   letter-spacing: 0.03em;
   padding-left: 24px;
@@ -635,7 +633,7 @@ footer {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-*/
+
 /* portfolio footer*/
 .footer-nav {
   width: 1600px;
