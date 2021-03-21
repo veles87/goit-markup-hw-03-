@@ -44,8 +44,10 @@ img {
   --our-backgraund-color: #f5f4fa;
   --portfolio-background-color: #e5e5e5;
   --card-set-gap: 30px;
-  --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+  --card-shadow-hover: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --card-shadow:
+    0px 0px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
 .body {
@@ -83,9 +85,9 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-.conteiner {
-  margin-left: auto;
+.conteiner-header {
   margin-right: auto;
+  margin-left: auto;
   padding: 0px 15px;
   width: 1200px;
   height: 80px;
@@ -192,6 +194,8 @@ header {
   align-items: center;
   text-align: center;
   background-color: var(--bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -201,14 +205,12 @@ header {
   font-size: 44px;
   line-height: 1.36;
 
-  padding-top: 200px;
-  margin-bottom: 30px;
   color: var(--white-color-text);
 }
 /*button*/
 .buttons {
   background: var(--hover-color);
-  margin-bottom: 200px;
+
   padding: 10px 32px 10px 32px;
   border-radius: 4px;
   border: none;
@@ -252,7 +254,7 @@ header {
 .about-us {
   display: flex;
   justify-content: center;
-
+  padding-left: 0px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -296,6 +298,8 @@ header {
   letter-spacing: 0.03em;
 
   color: var(--title-color);
+
+  padding-bottom: 50px;
 }
 
 .block-title {
@@ -303,26 +307,20 @@ header {
   text-align: center;
   padding-left: 0px;
   padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
 }
 
 .block-title .grid-title + .grid-title {
   padding-left: 30px;
 }
 
-.containers {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 4px;
-  width: 1178px;
-  height: 380px;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 4px;
+  padding: 0px 15pxpx;
   width: 1200px;
-  height: 380px;
 }
 /*our-team*/
 
@@ -351,8 +349,6 @@ h3 {
 }
 
 .banners {
-  margin-top: 94px;
-  height: 600px;
   background-color: var(--our-backgraund-color);
 }
 
@@ -360,6 +356,9 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
+  padding-bottom: 94px;
+
+}
 }
 
 .our-team .team + .team + .team {
@@ -382,16 +381,8 @@ h3 {
 /*footer*/
 footer {
   background-color: var(--bg-color);
-  height: 252px;
+  padding-bottom: 60px;
   padding-top: 60px;
-}
-
-.containerss {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 4px;
-  width: 1200px;
-  height: 81px;
 }
 
 .logos {
@@ -429,7 +420,8 @@ footer {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 20px;
+ padding-top: 20px;
+ margin-bottom: 0px;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -444,10 +436,11 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
+padding-top: 9px;
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+
 }
 
 /*portfolio html*/
@@ -513,9 +506,9 @@ footer {
 
 /*навигация*/
 .conteiner-portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+padding-bottom: 94px;
+    padding-top: 94px;
+  }
 
 .filters {
   display: flex;
@@ -543,6 +536,8 @@ footer {
 }
 
 .filter-button {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -590,15 +585,21 @@ footer {
   border-radius: 4px;
   overflow: hidden;
 }
-
+.card:hover,
+.card:focus{
+  box-shadow: var(--card-shadow-hover);
+}
 .card-content {
-  padding: 15px;
+  padding: 20px 24px ;
 }
 
 .card-text {
-  margin-top: 10px;
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
-
+.card-main{
+  margin: 0px;
+}
 .project-titles {
   font-family: Roboto;
   font-style: normal;
